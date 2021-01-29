@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Dancing Script', cursive;
+	text-shadow: 2px 0px 10px #000;
+	font-size: 16px;
+	background: #dee2ff;
+}
+
+h2 {
+	margin: 10px;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.main-container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#voice-list,
+#txt-input {
+	height: 50px;
+	border-radius: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1rem;
+	background: linear-gradient(
+		90deg,
+		hsla(240, 100%, 99%, 0.8) 0%,
+		hsla(60, 100%, 97%, 1) 100%
+	);
+	padding-left: 5px;
+	padding-right: 5px;
+	align-self: center;
+}
+
+#voice-list {
+	width: 400px;
+	margin-bottom: 20px;
+}
+
+#txt-input {
+	width: 500px;
+}
+
+#btn-speak {
+	cursor: pointer;
+	margin-top: 15px;
+	outline: none;
+	border: none;
+	background: #8e9aaf;
+	padding: 10px;
+	border-radius: 5px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.1rem;
+	font-weight: 700;
+	width: 100px;
+	height: 50px;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.6);
+}
+
+#btn-speak:hover {
+	filter: brightness(95%);
+}
+
+#btn-speak:active {
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 600px) {
+	#voice-list,
+	#txt-input {
+		width: 340px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#voice-list,
+	#txt-input {
+		font-size: 1rem;
+	}
+}
